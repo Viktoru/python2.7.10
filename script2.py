@@ -10,7 +10,7 @@ import itertools    #function for an efficient looping
 import codecs
 import string
 
-with open("Apple.txt", "r") as in_file:
+with open("Citrange.txt", "r") as in_file:
 
     linee = str(in_file.read())
     cropline = str.replace(linee, 'Origin:', '<b>Origin:</b>')
@@ -23,7 +23,7 @@ with open("Apple.txt", "r") as in_file:
 
     grouped = itertools.izip(*[stripped]*1) #Functions creating iterators for efficient (izip) looping
 
-    with open('Apple01.csv', 'w') as out_file: # this is my output file
+    with open('Citrange.csv', 'w') as out_file: # this is my output file
 
         nrsp10_w = csv.writer(out_file) # return object responsible for converting nrsp10 data into delimited strings.
         nrsp10_w.writerow(('Crop', 'Description')) # write the row paremeter to the writer's nrsp10 data file object.
